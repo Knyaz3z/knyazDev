@@ -1,0 +1,43 @@
+.recent__works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+
+
+  @media (max-width: 1185px) {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+.preview__recent {
+  max-width: 557px;
+  max-height: 314px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.techStack{
+  font-weight: 200;
+  padding: .25em 0;
+}
+
+.title{
+  padding: .5em 0;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.works__item{
+  background-color: #BFFF65;
+  color: black;
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s all ease;
+  &:hover{
+    transform: scale(1.025);
+  }
+}

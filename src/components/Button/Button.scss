@@ -1,0 +1,23 @@
+.button {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  background-color: var(--color-green);
+  padding: .5em .75em;
+  border-radius: 10px;
+  transition: .3s all ease;
+  text-align: center;
+  &.widthmax{
+    max-width: 150px;
+    @media (max-width: 450px) {
+      max-width: 125px;
+    }
+  }
+
+
+  &:hover {
+    transform: scale(1.1);
+    color: var(--color-green);
+    background-color: black;
+  }
+}

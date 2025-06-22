@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("../assets/fonts/LexendDeca-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("../assets/fonts/LexendDeca-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("../assets/fonts/LexendDeca-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Abhaya Libre Medium';
+  src: url("../assets/fonts/abhayalibre_medium.ttf");
+  font-weight: 300;
+}
+
+:root {
+  --color-green: #BFFF65;
+  scroll-behavior: smooth;
+
+}
+
+#root {
+  height: 100%;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // чтобы растянуть на всю высоту экрана
+}
+
+.content {
+  flex: 1; // занимает всё доступное пространство
+}
+
+.container {
+  max-width: 1184px;
+  margin: 0 auto 0 auto;
+  padding: 0 1em;
+}
+
+html, body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 784px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+h2, h1 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+
+}
+
+.h3 {
+  margin-top: 2em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}

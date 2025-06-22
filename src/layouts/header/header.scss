@@ -1,0 +1,59 @@
+.nav {
+  padding: 2em 0;
+
+  &__mini-menu {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--color-green);
+    padding: 1em 0;
+    margin-top: 1em;
+
+    &-item {
+
+    }
+  }
+
+
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    font-weight: 300;
+    padding: 0 160px;
+    @media (max-width: 643px) {
+      display: none;
+    }
+  }
+
+  &_item {
+    transition: .5s all;
+    padding: .4em;
+    border-radius: 10px;
+  }
+
+  &_item:hover {
+    color: var(--color-green);
+    background-color: black;
+    //padding: .5em; //ПОД ВОПРОСОМ???
+  }
+
+
+}
+
+.mobile__nav {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 643px) {
+    display: none;
+  }
+
+  & button {
+    background: transparent;
+  }
+}

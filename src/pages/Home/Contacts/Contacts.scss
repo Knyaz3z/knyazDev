@@ -1,0 +1,38 @@
+.contacts{
+  display: flex;
+  justify-content: start;
+  gap: 5em;
+  padding-left: 2.5em;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  & p{
+    font-weight: 200;
+  }
+
+  &__email{
+
+
+    & a{
+      font-size: 1.8em;
+      @media (max-width: 450px) {
+        font-size: 1.2em;
+      }
+    }
+
+  }
+
+  &__sn{
+
+    & img{
+      @media (max-width: 450px) {
+        width: 20%;
+      }
+
+    }
+  }
+
+}

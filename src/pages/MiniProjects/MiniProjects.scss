@@ -1,0 +1,181 @@
+.weather {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 0 auto;
+  max-width: 350px;
+  border: white 1px solid;
+  border-radius: 15px;
+  padding: 2em;
+
+  -webkit-box-shadow: 0px 4px 23px 7px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 4px 23px 7px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 4px 23px 7px rgba(34, 60, 80, 0.2);
+
+  & h3 {
+    padding-bottom: 1em;
+  }
+
+  & input {
+    border-bottom: 1px solid black;
+    padding: .5em;
+
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #handleButton {
+      margin-top: 1em;
+    }
+
+    .city {
+      font-size: 1.5em;
+      font-weight: 400;
+    }
+
+    .temp {
+      font-size: 3em;
+      padding: .5em 0;
+    }
+
+    .now {
+      font-size: 1em;
+      padding-bottom: 1em;
+    }
+
+    .humidity {
+      font-size: .8em;
+
+    }
+
+    .wind {
+      font-size: .8em;
+
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.slider__box {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 900px;
+  overflow: hidden;
+}
+
+.slider__img {
+  width: 250px;
+  @media (max-width: 420px) {
+    width: 150px;
+  }
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease;
+}
+
+.slider__img--active {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.slider__img--prev,
+.slider__img--next {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.slider__prev,
+.slider__next {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  padding: .5em;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.calculator {
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+
+  &__btn {
+    background: transparent;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    padding: .5em;
+
+    &.active {
+      background-color: #222222;
+      color: white;
+
+    }
+
+    &:first-child {
+      border-right: 1px solid black;
+    }
+
+  }
+
+  .inputs{
+
+    #form1{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      margin-top: 2em;
+      .inputs__input{
+        padding: 1em;
+        font-size: 1em;
+        border: 1px solid black;
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.result{
+  font-size: 2em;
+}
+
+.anime__api{
+  width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.anime__pic{
+  width: 350px;
+}

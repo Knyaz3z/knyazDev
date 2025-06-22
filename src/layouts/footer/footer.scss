@@ -1,0 +1,41 @@
+
+.footer {
+  background-color: #222222;
+  color: white;
+  padding: 2em 2em;
+  font-weight: 200;
+  margin-top: 2em;
+  
+  @media (max-width: 600px) {
+    font-size: 12px;
+    padding: 2em 0em;
+    & p{
+      text-align: center;
+    }
+  }
+  
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      gap: 1em;
+    }
+
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+
+      & img {
+        @media (max-width: 600px) {
+          width: 60%;
+        }
+
+      }
+    }
+
+    &-sn {
+
+      display: flex;
+    }
+  }
+}
