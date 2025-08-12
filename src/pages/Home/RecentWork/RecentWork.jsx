@@ -14,9 +14,9 @@ function RecentWork() {
             id: 1,
         },
         {
-            title: 'CURRENT VANDI',
-            description: 'A landing page for an electric car rental service.',
-            previewLink: '/myworks/carrent.png',
+            title: 'SUHOV-VEDET',
+            description: 'A single-page website for a professional event host',
+            previewLink: '/myworks/suhov-vedet.ru.png',
             techStack: 'Tech stack: HTML, SCSS, React, Node.js, JavaScript, PHP',
             id: 2,
         },

@@ -81,7 +81,7 @@ function FiverrItem({data, isActive, setIsActive}) {
                                     </div>
                                     <p>{data.description}</p>
                                     <div className="fiverr__table-desc">
-                                        <span>{data.parametrs.first}</span>
+                                        <span>{data.parametrs.first}&nbsp;</span>
                                         <span>{data.parametrs.second}</span>
 
                                     </div>
@@ -97,7 +97,7 @@ function FiverrItem({data, isActive, setIsActive}) {
                                     </div>
                                     <p>{data.description}</p>
                                     <div className="fiverr__table-desc">
-                                        <span>{data.parametrs.first}</span>
+                                        <span>{data.parametrs.first}&nbsp;</span>
                                         <span>{data.parametrs.second}</span>
 
                                     </div>
@@ -113,7 +113,7 @@ function FiverrItem({data, isActive, setIsActive}) {
                                     </div>
                                     <p>{data.description}</p>
                                     <div className="fiverr__table-desc">
-                                        <span>{data.parametrs.first}</span>
+                                        <span>{data.parametrs.first}&nbsp;</span>
                                         <span>{data.parametrs.second}</span>
                                     </div>
                                 </>

@@ -24,6 +24,12 @@ function MyWorks() {
                 imgLink: '/myworks/Nutricionist.png',
                 techStack: 'Tech stack: HTML, SCSS, React, Node.js, JavaScript, PHP'
             },
+            {
+                title: 'Suhov-vedet',
+                description: 'A single-page website for a professional event host in Moscow. Features a responsive design, engaging hero section, and clear service presentation. Includes contact form integration and SEO-friendly content to highlight 10 years of experience.',
+                imgLink: '/myworks/suhov-vedet.ru.png',
+                techStack: 'Tech stack: HTML, SCSS, React, Node.js, JavaScript, PHP'
+            },
         ]
     const [isOpen, setModalOpen] = useState(null)
     return (
@@ -46,6 +52,10 @@ function MyWorks() {
                 </div>
                 <img className='sheets' src="/sheets.png" alt=""/>
                 <img className='works__nutri-arrow' src="/Arrow.png" alt=""/>
+            </div>
+            <div onClick={() => setModalOpen(3)} className='works__kasey box'>
+                <h5>SUHOV-VEDET</h5>
+                <img src="/Arrow.png" alt="" className="works__kasey-arrow"/>
             </div>
 
             {
